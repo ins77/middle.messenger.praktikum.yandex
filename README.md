@@ -17,7 +17,7 @@
 - [Регистрация](https://deploy--singular-licorice-8a7fcc.netlify.app/#registration)
 - [Профиль](https://deploy--singular-licorice-8a7fcc.netlify.app/#profile)
 - [500](https://deploy--singular-licorice-8a7fcc.netlify.app/#server-error)
-- [404](https://deploy--singular-licorice-8a7fcc.netlify.app/anything-else)
+- [404](https://deploy--singular-licorice-8a7fcc.netlify.app/#not-found)
 
 ### Макет
 [Прототип макета в фигме](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE)

@@ -38,11 +38,6 @@ function navigate(page: EPages) {
 document.addEventListener('DOMContentLoaded', () => {
     const locationHash = window.location.hash.slice(1);
 
-    if (locationHash && !pages[locationHash]) {
-        navigate(EPages.NOT_FOUND);
-        return;
-    }
-
     navigate(locationHash as EPages || EPages.MESSENGER);
 });
 
