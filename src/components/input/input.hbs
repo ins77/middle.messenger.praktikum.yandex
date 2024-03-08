@@ -1,0 +1,11 @@
+<div class="input {{#if className}}{{className}}{{/if}}">
+    <input
+            class="input__element {{#if align-right}}input__element--align-right{{/if}} {{#if inputClassName}}{{ inputClassName }}{{/if}}"
+            type="{{ type }}"
+            title="{{ title }}"
+            name="{{ name }}"
+            value="{{ value }}"
+            placeholder="{{ placeholder }}"
+            {{#if disabled}}disabled="{{ disabled }}"{{/if}}
+    >
+</div>

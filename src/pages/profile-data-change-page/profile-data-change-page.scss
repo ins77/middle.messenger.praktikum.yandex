@@ -1,0 +1,13 @@
+@import '../../assets/variables';
+
+.profile-data-change-page {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  &__input {
+    &:last-of-type {
+      border: 0;
+    }
+  }
+}

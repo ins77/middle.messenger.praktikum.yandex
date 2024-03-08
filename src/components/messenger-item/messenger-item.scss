@@ -1,0 +1,80 @@
+@import '../../assets/variables';
+
+.messenger-item {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  padding: 2px 0 3px;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    height: 1px;
+    background-color: $divider-line-color;
+  }
+
+  &__block {
+    display: grid;
+    grid-template:
+      "a n d" 13px
+      "a t u" 1fr
+      / 47px 1fr 60px;
+    gap: 0 10px;
+    height: 100%;
+    padding: 10px;
+
+    &--current {
+      background: $messenger-list-current-bgcolor;
+      cursor: default;
+    }
+  }
+
+  &__avatar {
+    grid-area: a;
+    background: $gray-light-color;
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+  }
+
+  &__date {
+    grid-area: d;
+    font: $font-nano;
+    color: $text-light-color;
+    text-align: right;
+  }
+
+  &__name {
+    grid-area: n;
+    margin-bottom: 4px;
+    font-weight: $font-weight-semibold;
+  }
+
+  &__text {
+    grid-area: t;
+    margin-top: 4px;
+    font: $font-small;
+    color: $text-light-color;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__unread {
+    grid-area: u;
+    margin-top: auto;
+    margin-left: auto;
+    height: 20px;
+    width: 20px;
+    font: $font-micro;
+    background: $button-bgcolor;
+    color: $button-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

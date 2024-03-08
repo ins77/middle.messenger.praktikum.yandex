@@ -1,0 +1,22 @@
+@import '../../assets/variables';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: $button-bgcolor;
+  color: $button-color;
+  font: $font-regular;
+  font-size: 13px;
+  line-height: 1;
+
+  &--rounded {
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+}

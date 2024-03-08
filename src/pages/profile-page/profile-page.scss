@@ -1,0 +1,32 @@
+@import '../../assets/variables';
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  &__input {
+    &:last-of-type {
+      border: 0;
+    }
+  }
+
+  &__settings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__settings-item {
+    display: flex;
+    align-items: center;
+    height: 32px;
+
+    & + & {
+      border-top: 1px solid $divider-line-color;
+    }
+
+    &--red {
+      color: $text-red;
+    }
+  }
+}

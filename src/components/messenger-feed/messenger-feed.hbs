@@ -1,0 +1,37 @@
+<div class="messenger-feed {{#if className}}{{ className }}{{/if}}">
+    <header class="messenger-feed__header">
+        <div class="messenger-feed__header-user">
+            {{#if avatar}}
+                <img class="messenger-feed__header-user-avatar" src="{{ avatarUrl }}" alt="" />
+            {{else }}
+                <div class="messenger-feed__header-user-avatar"></div>
+            {{/if}}
+            <span class="messenger-feed__header-user-name">{{ name }}</span>
+        </div>
+        <button class="messenger-feed__header-button-menu"></button>
+    </header>
+
+    <div class="messenger-feed__messages">
+        {{#each (messenger-page-feed)}}
+            <div class="messenger-feed__message {{#if own}}messenger-feed__message--own{{/if}}">
+                {{#if image}}
+                    <img class="messenger-feed__message-image" src={{ image }} alt="" />
+                {{else }}
+                    {{ message }}
+                {{/if}}
+                <div class="messenger-feed__message-time {{#if read}}messenger-feed__message-time--checked{{/if}}">
+                    {{#if own}}
+                        <span class="messenger-feed__message-checked"></span>
+                    {{/if}}
+                    {{ time }}
+                </div>
+            </div>
+        {{/each}}
+    </div>
+
+    <div class="messenger-feed__footer">
+        <button class="messenger-feed__footer-button-add"><i class="fa-solid fa-paperclip"></i></button>
+        {{> InputFieldSecondary placeholder="Сообщение" type="text" name="message" }}
+        {{#> Button round=true }}<i class="fa-solid fa-arrow-right"></i>{{/Button}}
+    </div>
+</div>
