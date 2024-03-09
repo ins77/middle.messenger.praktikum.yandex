@@ -1,0 +1,15 @@
+<div class="messenger-item">
+    <div class="messenger-item__block {{#if current}}messenger-item__block--current{{/if}}">
+        {{#if avatar}}
+            <img class="messenger-item__avatar" src={{ avatar }} alt="аватар" />
+        {{else }}
+            <div class="messenger-item__avatar"></div>
+        {{/if}}
+        <div class="messenger-item__name">{{ name }}</div>
+        <div class="messenger-item__text">{{ message }}</div>
+        <div class="messenger-item__date">{{ date }}</div>
+        {{#if unread}}
+            <div class="messenger-item__unread">{{ unread }}</div>
+        {{/if}}
+    </div>
+</div>

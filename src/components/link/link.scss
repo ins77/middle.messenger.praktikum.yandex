@@ -1,0 +1,8 @@
+@import '../../assets/variables';
+
+.link {
+  font: $font-small;
+  color: $link-color;
+  text-decoration: none;
+  cursor: pointer;
+}

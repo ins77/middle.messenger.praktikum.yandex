@@ -1,0 +1,14 @@
+<div class="messenger-page">
+    {{#> MessengerList className="messenger-page__list" }}
+        {{#> MessengerListHeader className="messenger-page__list-header" }}
+            {{> TextButton className="messenger-page__list-profile" text="Профиль" page="profile" url="profile" }}
+            <form>{{> InputFieldSecondary placeholder="Поиск" type="text" name="search" }}</form>
+        {{/MessengerListHeader}}
+
+        {{#each (messenger-page-list)}}
+            {{> MessengerItem }}
+        {{/each}}
+    {{/ MessengerList }}
+
+    {{> MessengerFeed className="messenger-page__feed" name="Енот" }}
+</div>

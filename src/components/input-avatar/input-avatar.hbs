@@ -1,0 +1,12 @@
+<div class="input-avatar">
+    <label class="input-avatar__label">
+        <input type="file" class="input-avatar__element" {{#if disabled}}disabled={{ disabled }}{{/if}}/>
+        <figure class="input-avatar__figure">
+            <i class="fa-solid fa-camera input-avatar__dummy-image"></i>
+            {{#if avatar}}<img src={{avatar}} class="input-avatar__image" alt="аватар">{{/if}}
+            <figcaption class="input-avatar__figcaption">
+                Поменять аватар
+            </figcaption>
+        </figure>
+    </label>
+</div>

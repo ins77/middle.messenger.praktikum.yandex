@@ -1,0 +1,10 @@
+<div class="profile">
+    <aside class="profile__sidebar">
+        {{#> Button round=true page="messenger" url="/" }}<i class="fa-solid fa-arrow-left"></i>{{/Button}}
+    </aside>
+    <main class="profile__block">
+        {{> ProfileUser }}
+
+        {{> @partial-block }}
+    </main>
+</div>

@@ -1,0 +1,10 @@
+@import '../../assets/variables';
+
+.text-button {
+  width: 100%;
+  height: 40px;
+  font: $font-small;
+  color: $link-color;
+  text-decoration: none;
+  cursor: pointer;
+}

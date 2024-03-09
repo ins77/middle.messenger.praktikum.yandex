@@ -1,0 +1,15 @@
+{{#> Profile name="Енот" }}
+    <div class="profile-page">
+        <div class="profile-page__inputs">
+            {{#each (profile-page-inputs)}}
+                {{> InputFieldTertiary inputClassName="profile-page__input" name=name type=type disabled=true placeholder=placeholder label=label }}
+            {{/each}}
+        </div>
+
+        <div class="profile-page__settings">
+            {{> TextButton className="profile-page__settings-item" text="Изменить данные" page="profile-data-change" }}
+            {{> TextButton className="profile-page__settings-item" text="Изменить пароль" page="profile-password-change" }}
+            {{> TextButton className="profile-page__settings-item profile-page__settings-item--red" page="login" url="login" text="Выйти" }}
+        </div>
+    </div>
+{{/Profile}}

@@ -1,0 +1,9 @@
+@import '../../assets/variables';
+
+.messenger-list {
+  background: $messenger-list-bgcolor;
+  width: 310px;
+  height: 100%;
+  border-right: 1px solid $divider-line-color;
+  overflow: auto;
+}

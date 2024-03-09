@@ -1,0 +1,13 @@
+@import '../../assets/variables';
+
+.input-field-secondary {
+  &__element {
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: $gray-light-color;
+
+    &::placeholder {
+      color: $text-light-color;
+    }
+  }
+}

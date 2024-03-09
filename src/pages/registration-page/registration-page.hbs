@@ -1,0 +1,18 @@
+{{#> Dialog }}
+    <main>
+        <form class="registration-page">
+            <div class="registration-page__content">
+                {{> PageTitle title="Вход" }}
+
+                {{#each (registration-page-inputs)}}
+                    {{> InputFieldPrimary className="registration-page__input" }}
+                {{/each}}
+            </div>
+
+            <div class="registration-page__footer">
+                {{#> Button page="login" url="login" type="submit" }}Зарегистрироваться{{/Button}}
+                {{> TextButton className="registration-page__footer-link" text="Войти" page="login" url="login" }}
+            </div>
+        </form>
+    </main>
+{{/ Dialog }}
