@@ -1,11 +1,11 @@
 {{#> Profile }}
-    <div class="profile-data-change-page">
+    <form class="profile-data-change-page">
         <div class="profile-data-change-page__inputs">
             {{#each (profile-page-inputs)}}
                 {{> InputFieldTertiary inputClassName="profile-data-change-page__input" name=name type=type placeholder=placeholder label=label }}
             {{/each}}
         </div>
 
-        {{#> Button className="profile-data-change-page__button" page="profile" }}Сохранить{{/Button}}
-    </div>
+        {{#> Button className="profile-data-change-page__button" page="profile" type="submit" }}Сохранить{{/Button}}
+    </form>
 {{/Profile}}
